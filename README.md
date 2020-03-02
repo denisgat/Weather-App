@@ -6,4 +6,11 @@
 
 <!-- paragraphs -->
 
-This Project is a dynamic web page that makes use of Javascript, Canvis API, and requestAnimationFrame API to display bouncing balls that bounce around monitor screen and change colors once if they make contact with each other. 
+This webpage is a weather app that prompts users to enter a zip code, then displays current weather information for that location or a friendly error message if the zip code is not found.
+
+For this project i will be using an external API to retrieve weather data.
+
+
+By default, the app should display a title, input box for zip code, and submit button.
+
+When the submit button is clicked, the application should fetch weather data from api.openweathermap.org.
