@@ -1,1 +1,9 @@
 
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#btn1{
+    left: 10px;
+}
