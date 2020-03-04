@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
-<body class="container bg-white text-white text-center p-0">
-  <header class="border">
+<body class="container bg-white text-white text-center rounded-lg p-0">
+  <header class="border rounded">
     <div class="container">
       <h1 class="strong my-3 py-5 display-3 font-weight-bold">Weather App</h1>
       <!-- row -->
@@ -19,7 +19,7 @@
         <!-- col1 -->
         <div class="col-lg-3 offset-3 mx-auto my-2" style="min-width: 22rem; max-width: 22rem">
           <div class="alert alert-danger font-weight-bold border border-danger text-black" role="alert">
-            <h6>The zip code you entered is invalid!<h6>
+            <h6 id="alert"><h6>
           </div>
           <div class="input-group input-group-lg">
             <div class="input-group-prepend">
@@ -37,7 +37,7 @@
     </div>
   </header>
 
-  <main class="border bg-dark">
+  <main class="border rounded-lg bg-dark">
     <div class="container">
       <!-- City Row -->
       <div class="row">
