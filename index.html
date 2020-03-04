@@ -10,44 +10,44 @@
   <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
-<body class="container bg-white text-white text-center rounded-lg p-0">
-  <header class="border rounded">
+<body class="container bg-white text-center rounded-lg p-0">
+  <header class="border text-white rounded">
     <div class="container">
       <h1 class="strong my-3 py-5 display-3 font-weight-bold">Weather App</h1>
       <!-- row -->
       <div class="row mx-auto my-3 py-3">
         <!-- col1 -->
         <div class="col-lg-3 offset-3 mx-auto my-2" style="min-width: 22rem; max-width: 22rem">
-          <div class="alert alert-danger font-weight-bold border border-danger text-black" role="alert">
-            <h6 id="alert"><h6>
+          <div id="altbox" class="alt alert-danger font-weight-bold border border-danger text-black p-1 mb-1" role="alert">
+            <h6 id="alt"><h6>
           </div>
           <div class="input-group input-group-lg">
             <div class="input-group-prepend">
               <span id=btn1 class="input-group-text text-white bg-secondary shadow-lg" id="inputGroup-sizing-lg">Enter
-                zipcode</span>
+                zipcode:</span>
             </div>
             <input type="text" id="zip" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
           </div>
         </div>
         <!-- col2 -->
-        <div class="col-lg-2 mx-auto pt-5" id="buttondown">
+        <div class="col-lg-2 mx-auto pt-2" id="buttondown">
           <button id="btn2" class="btn btn-lg btn-round btn-success ">Get Weather</button>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="border rounded-lg bg-dark">
+  <main id="main" class="border rounded-lg bg-dark">
     <div class="container">
       <!-- City Row -->
       <div class="row">
         <div class="mx-auto col-sm-8 py-5">
           <div class="card" style="height: 12rem">
-            <div class="card-header bg-success">
-              <h4>City</h4>
+            <div class="card-header bg-primary">
+              <h3>City</h3>
             </div>
             <div class="card-body">
-              <p>###</p>
+              <h4 id="city" class="display-4">###</h4>
             </div>
           </div>
         </div>
@@ -58,20 +58,20 @@
         <div class="mx-auto col-sm-8 py-5">
           <div class="card-group">
             <div class="card" style="height: 12rem">
-              <div class="card-header bg-success">
-                <h4>Temperature</h4>
+              <div class="card-header bg-primary">
+                <h3>Temperature</h3>
               </div>
               <div class="card-body p-0">
                 <div class="container">
-                  <div class="row" style="height: 8rem">
-                    <div class="col-4 border">
-                      <p>###</p>
+                  <div class="row" style="height: 125px">
+                    <div class="col-4 border-left pt-4">
+                      <h1 id="tempf">###</h1>
                     </div>
-                    <div class="col-4 border">
-                      <p>###</p>
+                    <div class="col-4 border-right border-left pt-4">
+                      <h1 id="tempc">###</h1>
                     </div>
-                    <div class="col-4 border">
-                      <p>###</p>
+                    <div class="col-4 border-right pt-4">
+                      <h1 id="tempk">###</h3>
                     </div>
                   </div>
                 </div>
@@ -84,12 +84,14 @@
       <!-- Condition Row -->
       <div class="row">
         <div class="mx-auto col-sm-8 py-5">
-          <div class="card" style="height: 12rem">
-            <div class="card-header bg-success">
-              <h4>Condition</h4>
+          <div class="card" style="height: 16rem">
+            <div class="card-header bg-primary">
+              <h3>Condition</h3>
             </div>
-            <div class="card-body">
-              <p>###</p>
+            <div class="card-body" style>
+              <h3 id="ic">###</h3>
+              <h3 id="cond1">###</h3>
+              <h3 id="cond2">###</h3>
             </div>
           </div>
         </div>
@@ -99,8 +101,8 @@
       <div class="row">
         <div class="mx-auto col-sm-8 py-5">
           <div class="card" style="height: 36rem">
-            <div class="card-header bg-success">
-              <h4>Season Display</h4>
+            <div class="card-header bg-primary">
+              <h3>Season Display</h3>
             </div>
             <div class="card-body">
               <p>###</p>
