@@ -10,64 +10,69 @@
   <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
-
-<header class="bg-dark text-white text-center">
-  <div class="container">
-    <h1 class="strong my-3 py-5 display-3">Weather App</h1>
-    <!-- row -->
-    <div class="row mx-auto my-3 py-3">
-      <!-- col1 -->
-      <div class="col-lg-3 offset-3 mx-auto my-2" style="min-width: 22rem; max-width: 22rem">
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span id=btn1 class="input-group-text text-white bg-secondary" id="inputGroup-sizing-lg" >ZipCode</span>
+<body class="container bg-white text-white text-center p-0">
+  <header class="border">
+    <div class="container">
+      <h1 class="strong my-3 py-5 display-3 font-weight-bold">Weather App</h1>
+      <!-- row -->
+      <div class="row mx-auto my-3 py-3">
+        <!-- col1 -->
+        <div class="col-lg-3 offset-3 mx-auto my-2" style="min-width: 22rem; max-width: 22rem">
+          <div class="alert alert-danger font-weight-bold border border-danger text-black" role="alert">
+            <h6>The zip code you entered is invalid!<h6>
           </div>
-          <input type="text" id="zip" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span id=btn1 class="input-group-text text-white bg-secondary shadow-lg" id="inputGroup-sizing-lg">Enter
+                zipcode</span>
+            </div>
+            <input type="text" id="zip" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+          </div>
         </div>
-      </div>
-      <!-- col2 -->
-      <div class="col-lg-2 mx-auto">
-        <button id="btn2" class="btn btn-lg btn-round btn-success">Get Weather</button>
-      </div>
-    </div>
-  </div>
-</header>
-
-<body class="bg-dark text-center text-white">
-  <div class="container">
-    <!-- City Row -->
-    <div class="row">
-      <div class="mx-auto col-sm-8 py-5">
-        <div class="card" style="height: 12rem">
-          <div class="card-header bg-success">
-            <h4>City</h4>
-          </div>
-          <div class="card-body">
-            <p>###</p>
-          </div>
+        <!-- col2 -->
+        <div class="col-lg-2 mx-auto pt-5" id="buttondown">
+          <button id="btn2" class="btn btn-lg btn-round btn-success ">Get Weather</button>
         </div>
       </div>
     </div>
+  </header>
 
-    <!-- Temp Row -->
-    <div class="row">
-      <div class="mx-auto col-sm-8 py-5">
-        <div class="card-group">
+  <main class="border bg-dark">
+    <div class="container">
+      <!-- City Row -->
+      <div class="row">
+        <div class="mx-auto col-sm-8 py-5">
           <div class="card" style="height: 12rem">
             <div class="card-header bg-success">
-              <h4>Temperature</h4>
+              <h4>City</h4>
             </div>
-            <div class="card-body p-0">
-              <div class="container">
-                <div class="row" style="height: 8rem">
-                  <div class="col-4 border">
-                    <p>###</p>
-                  </div>
-                  <div class="col-4 border">
-                    <p>###</p>
-                  </div>
-                  <div class="col-4 border">
-                    <p>###</p>
+            <div class="card-body">
+              <p>###</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temp Row -->
+      <div class="row">
+        <div class="mx-auto col-sm-8 py-5">
+          <div class="card-group">
+            <div class="card" style="height: 12rem">
+              <div class="card-header bg-success">
+                <h4>Temperature</h4>
+              </div>
+              <div class="card-body p-0">
+                <div class="container">
+                  <div class="row" style="height: 8rem">
+                    <div class="col-4 border">
+                      <p>###</p>
+                    </div>
+                    <div class="col-4 border">
+                      <p>###</p>
+                    </div>
+                    <div class="col-4 border">
+                      <p>###</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -75,52 +80,51 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Condition Row -->
-    <div class="row">
-      <div class="mx-auto col-sm-8 py-5">
-        <div class="card" style="height: 12rem">
-          <div class="card-header bg-success">
-            <h4>Condition</h4>
-          </div>
-          <div class="card-body">
-            <p>###</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Season Row -->
-    <div class="row">
-      <div class="mx-auto col-sm-8 py-5">
-        <div class="card" style="height: 36rem">
-          <div class="card-header bg-success">
-            <h4>Season Display</h4>
-          </div>
-          <div class="card-body">
-            <p>###</p>
+      <!-- Condition Row -->
+      <div class="row">
+        <div class="mx-auto col-sm-8 py-5">
+          <div class="card" style="height: 12rem">
+            <div class="card-header bg-success">
+              <h4>Condition</h4>
+            </div>
+            <div class="card-body">
+              <p>###</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- Season Row -->
+      <div class="row">
+        <div class="mx-auto col-sm-8 py-5">
+          <div class="card" style="height: 36rem">
+            <div class="card-header bg-success">
+              <h4>Season Display</h4>
+            </div>
+            <div class="card-body">
+              <p>###</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
 
 
 
 
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-    <script src="./JS/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./JS/main.js"></script>
 </body>
 
 </html>

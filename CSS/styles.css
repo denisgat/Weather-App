@@ -2,16 +2,26 @@
 html, body{
     width: 100%;
     height: 100%;
+    padding: 1%
+}
+
+header {
+    background-image: url('https://home.openweathermap.org/assets/history_banner-6fb0d5dc29d608ac8bc0717480e210a40260e475f6fb86880ef4687d496eb376.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #btn1{
     left: 10px;
 }
 
-/* .card-header{
-    background-color: green
-} */
 
 p{
     color: black;
 }
+
+h1{
+text-shadow: 10px 10px 10px black;
+}
+
+
