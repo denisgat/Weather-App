@@ -18,8 +18,10 @@
       <div class="row mx-auto my-3 py-3">
         <!-- col1 -->
         <div class="col-lg-3 offset-3 mx-auto my-2" style="min-width: 22rem; max-width: 22rem">
-          <div id="altbox" class="alt alert-danger font-weight-bold border border-danger text-black p-1 mb-1" role="alert">
-            <h6 id="alt"><h6>
+          <div id="altbox" class="alt alert-danger font-weight-bold border border-danger text-black p-1 mb-1"
+            role="alert">
+            <h6 id="alt">
+              <h6>
           </div>
           <div class="input-group input-group-lg">
             <div class="input-group-prepend">
@@ -57,24 +59,23 @@
       <div class="row">
         <div class="mx-auto col-sm-8 py-5">
           <div class="card-group">
-            <div class="card" style="height: 12rem">
+            <div class="card">
               <div class="card-header bg-primary">
                 <h3>Temperature</h3>
               </div>
               <div class="card-body p-0">
-                <div class="container">
-                  <div class="row" style="height: 125px">
-                    <div class="col-4 border-left pt-4">
-                      <h1 id="tempf">###</h1>
-                    </div>
-                    <div class="col-4 border-right border-left pt-4">
-                      <h1 id="tempc">###</h1>
-                    </div>
-                    <div class="col-4 border-right pt-4">
-                      <h1 id="tempk">###</h3>
-                    </div>
-                  </div>
+                <!-- <div class="container">
+                  <div class="row">
+                    <div class="col-4 border-left pt-4 text-center"> -->
+                <h1 id="tempf" class="my-3">###</h1>
+                <div class="pr-3">
+                  <label class="mx-2" for="Fah"><sup>o</sup>F</label><input id="F" type="radio" name="FCK" value="F" checked>
+                  <label class="mx-2" for="Cel"><sup>o</sup>C</label><input id="C" type="radio" name="FCK" value="C">
+                  <label class="mx-2" for="Kel"><sup>o</sup>K</label><input id="K" type="radio" name="FCK" value="K">
                 </div>
+                <!-- </div> -->
+                <!-- </div>
+                  </div> -->
               </div>
             </div>
           </div>
@@ -84,7 +85,7 @@
       <!-- Condition Row -->
       <div class="row">
         <div class="mx-auto col-sm-8 py-5">
-          <div class="card" style="height: 16rem">
+          <div class="card">
             <div class="card-header bg-primary">
               <h3>Condition</h3>
             </div>
@@ -98,7 +99,7 @@
       </div>
 
       <!-- Season Row -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="mx-auto col-sm-8 py-5">
           <div class="card" style="height: 36rem">
             <div class="card-header bg-primary">
@@ -109,7 +110,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+    </div>
 
   </main>
 

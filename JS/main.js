@@ -11,11 +11,13 @@ var main = document.getElementById('main');
 let button2 = document.getElementById('btn2');
 let city = document.getElementById('city');
 let tempf = document.getElementById('tempf');
-let tempk = document.getElementById('tempk');
-let tempc = document.getElementById('tempc');
 let cond1 = document.getElementById('cond1');
 let cond2 = document.getElementById('cond2');
 let ic = document.getElementById('ic');
+let C = document.getElementById("C");
+let F = document.getElementById("F");
+let K = document.getElementById("K");
+let data;
 
 main.style.display = "none";
 altbox.style.display = "none";
@@ -39,13 +41,12 @@ async function weather() {
             .then((info) => {
 
                 console.log(info);
+                data = info;
 
                 altbox.style.display = "none";
                 main.style.display = "block";
 
                 city.innerHTML = info.name;
-                tempk.innerHTML = `${Math.floor(info.main.temp)} <sup>o</sup>K`;
-                tempc.innerHTML = `${Math.floor(info.main.temp - 273.15)}  <sup>o</sup>C`;
                 tempf.innerHTML = `${Math.floor(((info.main.temp - 273.15) * 9 / 5 + 32))}  <sup>o</sup>F`;
                 cond1.innerHTML = info.weather[0].main;
                 cond2.innerHTML = info.weather[0].description;
@@ -76,7 +77,27 @@ async function weather() {
 
 }
 
+function click(){
+    if(F.checked) {
+      tempf.innerHTML = `${Math.floor(((data.main.temp - 273.15) * 9 / 5 + 32))}  <sup>o</sup>F`;
+    }
+    if(C.checked) {
+        tempf.innerHTML = `${Math.floor(data.main.temp - 273.15)}  <sup>o</sup>C`;
+    }
+    if(K.checked) {
+        tempf.innerHTML = `${Math.floor(data.main.temp)} <sup>o</sup>K`;
+    }
+}   
+
 button2.onclick = weather;
+
+F.onclick = click;
+C.onclick = click;
+K.onclick = click;
+
+
+
+
 
 
 // $("#zip"),keydown(weather);
